@@ -28,7 +28,7 @@ content.write('Hello Earth');
 content.write('\r\n'+'Hello World');
 content.write('\r\n'+'Hello Universe');
 content.end(function(){console.log('Written');})
-*/
+
 //homeTask#3
 let nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
@@ -41,7 +41,7 @@ let transporter = nodemailer.createTransport({
 
 let mailOptions = {
   from: 'youremail@gmail.com',
-  to: 'steeve.bow@gmail.com', 
+  to: 'to@gmail.com', //who should get message 
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
 };
@@ -53,4 +53,4 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
-
+*/
