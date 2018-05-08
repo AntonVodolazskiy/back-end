@@ -25,6 +25,6 @@ http.createServer(function(req, res){
   	})};
 
 }).listen(3000, function() {
-	console.log('Server on localohost:3000');
+	console.log('Server on localhost:3000');
 }); 
 	
