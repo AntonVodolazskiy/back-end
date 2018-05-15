@@ -3,7 +3,7 @@ var request = require('request');
 var url = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5';
 
 request(url, function(err, res, body) {
-	fs.writeFileSync("index.json", body);
+	fs.writeFileSync("index.json", body); //bug
 });
 var arr = fs.readFileSync("index.json");
 var rates = JSON.parse(arr);  
